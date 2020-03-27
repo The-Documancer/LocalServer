@@ -10,7 +10,7 @@ Check if you need to install Node.js / npm. You can run the following, it'll sho
 ### Step 2. Clone this Repo
 Use this code to clone this repo:
 ```
-> git clone 
+> git clone https://github.com/The-Documancer/LocalServer.git
 ```
 !!! COME BACK
 
@@ -41,4 +41,3 @@ If you change `file_hander.js`, run this command to copy it into all the child R
 ```
 
 Then you'd need to rebuild those projects.
-
