@@ -1,16 +1,29 @@
 # Readme
 ## Installing
 Hello. Welcome. You are gonna love this! We've never used local webservers before, but now, we are gonna make somethin' special. 
-### Step 1. Install Node.js
-From a command prompt window, check if you need to install Node.js / npm. You can run the following, it'll show your npm version.
+### Step 1. Check if Node.js is Installed
+From a command prompt window, check if you need to install Node.js / npm. You can run the following to see your installed node version:
+```
+> node -v
+v12.16.1
+```
+Also, check if you have the Node Package Manager (npm) installed with this:
 ```
 > npm -v
 6.13.4
 ```
-### Step 2. Clone this Repo
-Create a folder that will hold your repo.
 
-Use this code to clone this repo:
+If you don't have node.js or npm installed at all,  download and install the LTS version from here:
+https://nodejs.org/en/
+
+When installing, use the installer defaults.
+
+### Step 2. Clone this Repo
+Create a folder that will hold your repo, such as "LocalServer".
+
+In your terminal, navigate to the folder.
+
+Use this code to clone this repo to that folder:
 ```
 > git clone https://github.com/The-Documancer/LocalServer.git
 ```
@@ -34,8 +47,7 @@ added 150 packages from 120 contributors and audited 264 packages in 12.136s
 ### Step 4. Change configs/config.js
 Open `configs/config.js` and modify the source outputs and wwwroot constants to match your system's path.
 
->For the **Documancers team**, these should be the same as on my system so if you're using something different let me know so my paths don't get polluted with yours.
-
+>For the **Documancers team**, these should be the same as on my system so if you're using something different, be sure to let me know, so that my paths don't get polluted with yours.
 
 ## Launching the Local Webserver
 This starts a local webserver and a file watcher.
