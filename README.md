@@ -63,3 +63,11 @@ If you change `file_hander.js`, run this command to copy it into all the child R
 ```
 
 Then you'd need to rebuild those projects.
+
+## About Common_Web.css
+If you change `Common_Web.css`, run this command to copy it into all the child RH projects source locations.
+
+```
+> npm run copy_common_web_css
+```
+Note that you will need to manually change the `https://` inside the .css to be `http://` for RoboHelp to not complain about it.

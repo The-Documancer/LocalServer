@@ -7,27 +7,27 @@ const logger = require('../helpers/logger')
 
 const path_exists = (p) => assert(fs.existsSync(p), `${p} does not exist.`)
 
-const file_handler_name = 'file_handler.js'
+const file_name = 'Common_Web.css'
 
-const file_handler_path = path.join(wwwroot, file_handler_name)
+const file_path = path.join(wwwroot, file_name)
 
-path_exists(file_handler_path)
+path_exists(file_path)
 
 const project_folder_path = path.join(wwwroot, '..', 'projects')
 
 path_exists(project_folder_path)
 
 projects.forEach((project) => {
-    let write_source_path = path.join(project_folder_path, project, file_handler_name)
+    let write_source_path = path.join(project_folder_path, project, file_name)
     path_exists(write_source_path)
 
 
-    fs.copyFile(file_handler_path, write_source_path, (err) => {
+    fs.copyFile(file_path, write_source_path, (err) => {
         if (err) {
             logger.err(err)
             throw err;
         }
 
-        logger.info(`Copied ${file_handler_name} to ${write_source_path}`)
+        logger.info(`Copied ${file_name} to ${write_source_path}`)
     })
 })

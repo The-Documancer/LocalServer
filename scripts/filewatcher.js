@@ -9,6 +9,8 @@ const files_to_watch = [
     "*.js",
     "*.css",
     "index.htm",
+    "privacy_policy.htm",
+    "cookie_policy.htm"
 ]
 
 let files = files_to_watch.map((file) => path.join(wwwroot, file))
