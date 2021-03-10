@@ -70,4 +70,3 @@ If you change `Common_Web.css`, run this command to copy it into all the child R
 ```
 > npm run copy_common_web_css
 ```
-Note that you will need to manually change the `https://` inside the .css to be `http://` for RoboHelp to not complain about it.
